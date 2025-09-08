@@ -398,9 +398,9 @@ body {
     border-radius: 50%;
     background: radial-gradient(
         circle at center,
-        rgba(119, 228, 243, 0.08) 0%,
-        rgba(100, 255, 218, 0.04) 35%,
-        transparent 70%
+        rgba(119, 228, 243, 0.10) 0%,
+        rgba(100, 255, 218, 0.05) 35%,
+        transparent 75%
     );
     pointer-events: none;
     z-index: 1;
