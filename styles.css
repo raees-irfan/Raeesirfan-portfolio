@@ -390,20 +390,23 @@ body {
         height: 150px;
     }
 }
-/* Mouse Gradient Effect */
+/* Subtle Deep Ocean Light */
 .mouse-gradient {
     position: fixed;
-    width: 500px;
-    height: 500px;
+    width: 250px;   /* smaller glow size */
+    height: 250px;
     border-radius: 50%;
     background: radial-gradient(
         circle at center,
-        rgba(119, 228, 243, 0.10) 0%,
-        rgba(100, 255, 218, 0.05) 35%,
-        transparent 75%
+        rgba(0, 200, 255, 0.20) 0%,   /* brighter cyan center */
+        rgba(0, 150, 180, 0.10) 40%,  /* aqua fade */
+        rgba(0, 50, 70, 0.05) 70%,    /* deep fade */
+        transparent 100%              /* smooth vanish */
     );
     pointer-events: none;
     z-index: 1;
     transform: translate(-50%, -50%);
-    transition: left 0.15s ease, top 0.15s ease;
+    transition: left 0.25s ease-out, top 0.25s ease-out;
+    filter: blur(30px);  /* keep soft edges */
+    mix-blend-mode: screen;
 }
